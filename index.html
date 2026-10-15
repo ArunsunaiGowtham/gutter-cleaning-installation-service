@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexGutter | Expert Gutter Cleaning & Seamless Installation Service</title>
+  <meta name="description" content="Protect your home from costly water damage with ApexGutter. Professional residential & commercial gutter cleaning, downspout clearing, seamless aluminum installation, gutter guard protection, and leak repair. Licensed, insured, OSHA compliant.">
+  <meta name="keywords" content="gutter cleaning, seamless gutter installation, gutter repair, downspout cleaning, leaf guard installation, commercial gutter service, residential roof drainage">
+  <meta name="theme-color" content="#0284c7">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts: Inter, Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS: Bootstrap 5.3.3 & Bootstrap Icons (Local with CDN fallback) -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Core & Utility CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- Single Unified Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="ApexGutter Home">
+          <img src="assets/images/logo/logo.svg" alt="ApexGutter Logo" class="brand-logo-img">
+        </a>
+
+        <!-- Right Quick Controls on Mobile (Theme, RTL, Hamburger) -->
+        <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+          <button class="nav-icon-btn theme-toggle-btn" type="button" aria-label="Toggle dark mode" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill theme-icon"></i>
+          </button>
+          <button class="nav-icon-btn nav-rtl-btn rtl-toggle-btn" type="button" aria-label="Toggle text direction" title="Toggle RTL">
+            <span class="rtl-badge-text fw-bold">RTL</span>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Toggler -->
+        <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-primary"></i>
+        </button>
+
+        <!-- Desktop Navigation Items -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopNav">
+          <ul class="navbar-nav mx-auto align-items-center gap-1">
+            <!-- Home Dropdown (Closed by default) -->
+            <li class="nav-item dropdown home-dropdown-nav">
+              <a class="nav-link dropdown-toggle" href="#" id="homeMenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Home</span>
+                <i class="bi bi-chevron-down" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu home-dropdown-menu shadow" aria-labelledby="homeMenuDropdown">
+                <a href="index.html" class="home-dropdown-item">
+                  <span class="home-item-title"><i class="bi bi-house-door-fill text-primary me-2"></i>Home 1 — General Services</span>
+                  <span class="home-item-desc">Comprehensive residential gutter care &amp; water protection</span>
+                </a>
+                <a href="index-2.html" class="home-dropdown-item">
+                  <span class="home-item-title"><i class="bi bi-shield-shaded text-info me-2"></i>Home 2 — Rainwater &amp; Installation</span>
+                  <span class="home-item-desc">Seamless extrusion, flood prevention &amp; instant estimator</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <!-- Action Items (Phone, Theme, RTL, CTA) -->
+          <div class="header-actions ms-lg-2">
+            <a href="tel:+18005554887" class="nav-phone-link d-none d-xl-inline-flex align-items-center">
+              <i class="bi bi-telephone-fill text-primary"></i>
+              <span>(800) 555-4887</span>
+            </a>
+
+            <!-- Theme Toggle -->
+            <button class="nav-icon-btn theme-toggle-btn" type="button" aria-label="Toggle dark mode" title="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-stars-fill theme-icon"></i>
+            </button>
+
+            <!-- RTL Toggle -->
+            <button class="nav-icon-btn nav-rtl-btn rtl-toggle-btn" type="button" aria-label="Toggle text direction" title="Toggle RTL Layout">
+              <span class="rtl-badge-text fw-bold">RTL</span>
+            </button>
+
+            <!-- CTA Button -->
+            <button type="button" class="btn btn-cta" data-bs-toggle="modal" data-bs-target="#estimateModal">
+              <i class="bi bi-calculator"></i>
+              <span>Get a Free Estimate</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Navigation Menu -->
+    <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      <div class="offcanvas-header border-bottom">
+        <a href="index.html" class="text-decoration-none" id="mobileNavLabel">
+          <img src="assets/images/logo/logo.svg" alt="ApexGutter Logo" class="brand-logo-img" style="height:38px;">
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <ul class="navbar-nav mb-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" href="#" id="mobileHomeDropdownToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Home</span>
+            </a>
+            <ul class="dropdown-menu border-0 shadow-none ps-3 bg-body-tertiary rounded-3" aria-labelledby="mobileHomeDropdownToggle">
+              <li><a class="dropdown-item py-2 fw-semibold" href="index.html">Home 1 — General Services</a></li>
+              <li><a class="dropdown-item py-2 fw-semibold" href="index-2.html">Home 2 — Rainwater &amp; Installation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing Guide</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="mt-auto pt-4 border-top">
+          <button type="button" class="btn btn-cta w-100 justify-content-center mb-3" data-bs-toggle="modal" data-bs-target="#estimateModal">
+            <i class="bi bi-calculator"></i>
+            <span>Get a Free Estimate</span>
+          </button>
+          <div class="text-center small text-secondary">
+            <p class="mb-1"><a href="tel:+18005554887" class="text-decoration-none text-secondary"><i class="bi bi-telephone-fill text-primary me-1"></i>(800) 555-4887</a></p>
+            <p class="mb-0"><i class="bi bi-shield-check text-success me-1"></i> Licensed &amp; Fully Insured</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroHome">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="hero-badge mb-3">
+              <i class="bi bi-shield-check text-primary"></i>
+              <span>#1 Rated Roofline &amp; Water Drainage Specialists</span>
+            </div>
+            <h1 class="hero-title mb-3">
+              Protect Your Home with <span class="highlight">Expert Gutter Care</span>
+            </h1>
+            <p class="hero-lead mb-4">
+              Prevent catastrophic foundation cracks, rotten fascia boards, and basement flooding. We deliver hand-scooped gutter cleaning, high-flow downspout flushing, and custom on-site seamless gutter installation.
+            </p>
+            <div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+              <button type="button" class="btn btn-cta" data-bs-toggle="modal" data-bs-target="#estimateModal">
+                <i class="bi bi-calculator"></i>
+                <span>Get a Free Estimate</span>
+              </button>
+              <a href="services.html" class="btn btn-outline-primary">
+                <span>Explore Services</span>
+                <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 pt-3 border-top">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                <span class="small fw-bold">Zero-Mess Yard Guarantee</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                <span class="small fw-bold">OSHA Safety Certified</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                <span class="small fw-bold">$2M Liability Insured</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-img-wrap">
+              <img src="assets/images/hero/hero-gutter-cleaner.jpg" alt="Professional gutter technician safely cleaning roof gutters from OSHA compliant ladder" class="hero-img">
+              <div class="hero-floating-card">
+                <div class="rounded-circle bg-primary text-white p-2 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <div>
+                  <strong class="d-block text-dark">4.9 / 5.0 Star Rating</strong>
+                  <small class="text-secondary">Over 3,400+ homes protected</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Introduction Section -->
+    <section class="py-5 bg-white border-bottom" id="introSection">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2">
+            <span class="section-tag">Dedicated Exterior Protection</span>
+            <h2 class="section-title">Built on Precision Workmanship &amp; Water Defense</h2>
+            <p class="text-secondary lead">
+              At ApexGutter, we believe a reliable gutter system is the single most critical defense against exterior home deterioration.
+            </p>
+            <p class="text-secondary">
+              For more than a decade, our certified gutter technicians have helped thousands of residential homeowners and commercial facility managers protect their structural foundations. We don't just blast gutters with leaf blowers and leave mud across your landscaping—our crews hand-scoop debris into contractor bags, snake downspout lines, test drainage flow, and verify roof pitch with digital levels.
+            </p>
+            <div class="row g-3 mt-2">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-light">
+                  <i class="bi bi-patch-check-fill text-primary fs-3"></i>
+                  <div>
+                    <h6 class="fw-bold mb-0">100% Hand Cleaning</h6>
+                    <small class="text-muted">No blown sludge on walls</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3 p-3 rounded-3 bg-light">
+                  <i class="bi bi-droplet-half text-info fs-3"></i>
+                  <div>
+                    <h6 class="fw-bold mb-0">Hydro-Flow Tested</h6>
+                    <small class="text-muted">Full downspout flushing</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="rounded-4 overflow-hidden shadow">
+              <img src="assets/images/services/service-inspection.jpg" alt="ApexGutter licensed technician conducting multi-point gutter inspection" class="img-fluid w-100" style="max-height:440px;object-fit:cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Water Damage Prevention Section -->
+    <section class="py-5 bg-body-tertiary" id="waterDamagePrevention">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="section-tag text-danger"><i class="bi bi-exclamation-triangle-fill me-1"></i>The Cost of Neglect</span>
+          <h2 class="section-title">Water Damage Prevention</h2>
+          <p class="section-subtitle">
+            A single heavy rainstorm on clogged gutters can cause thousands of dollars in permanent structural damage. Here is what we protect your property against:
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="damage-feature-box">
+              <div class="damage-icon-wrap">
+                <i class="bi bi-building-fill-exclamation"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Foundation Cracking</h5>
+              <p class="text-secondary small mb-0">
+                Rain cascading over gutter edges saturates the soil directly adjacent to footings, expanding foundation clay and cracking concrete slabs.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="damage-feature-box">
+              <div class="damage-icon-wrap">
+                <i class="bi bi-water"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Basement Flooding</h5>
+              <p class="text-secondary small mb-0">
+                Overloaded gutters dump thousands of gallons around perimeter walls, overwhelming sump pumps and penetrating cold foundation joints.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="damage-feature-box">
+              <div class="damage-icon-wrap">
+                <i class="bi bi-house-slash-fill"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Rotted Fascia Boards</h5>
+              <p class="text-secondary small mb-0">
+                Stagnant water sitting in sagging gutters softens wooden fascia and soffit framing, inviting wood rot, carpenter ants, and mold.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="damage-feature-box">
+              <div class="damage-icon-wrap">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Landscape Erosion</h5>
+              <p class="text-secondary small mb-0">
+                Heavy sheet flow carves trenches in manicured lawns, washes away expensive mulch beds, and exposes shrub and tree root networks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Overview Grid -->
+    <section class="py-5 bg-white" id="featuredServices">
+      <div class="container py-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 gap-3">
+          <div>
+            <span class="section-tag">Our Gutter Solutions</span>
+            <h2 class="section-title mb-0">Comprehensive Gutter Services</h2>
+          </div>
+          <a href="services.html" class="btn btn-outline-primary">
+            <span>View All 9 Services</span>
+            <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+        <div class="row g-4">
+          <!-- Service 1: Residential Gutter Cleaning -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-card-img-wrap">
+                <img src="assets/images/services/service-residential.jpg" alt="Residential Gutter Cleaning Service" class="service-card-img" loading="lazy">
+                <span class="service-card-badge">Residential</span>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-icon"><i class="bi bi-house-heart"></i></div>
+                <h4 class="service-card-title"><a href="service-details.html?service=residential-cleaning">Residential Gutter Cleaning</a></h4>
+                <p class="service-card-desc">Hand-removal of leaves, pine needles, roof sand, and organic sludge with zero debris dropped on your lawn.</p>
+                <div class="service-card-footer">
+                  <span class="fw-bold text-primary">From $150</span>
+                  <a href="service-details.html?service=residential-cleaning" class="fw-bold text-decoration-none small">
+                    View Details <i class="bi bi-chevron-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Seamless Gutter Installation -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-card-img-wrap">
+                <img src="assets/images/services/service-seamless.jpg" alt="Seamless Gutter Mobile Roll-Forming Machine" class="service-card-img" loading="lazy">
+                <span class="service-card-badge">Installation</span>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-icon"><i class="bi bi-shield-check"></i></div>
+                <h4 class="service-card-title"><a href="service-details.html?service=seamless-installation">Seamless Gutter Installation</a></h4>
+                <p class="service-card-desc">Custom on-site extruded .032 heavy gauge aluminum gutters tailored to the millimeter of your roofline.</p>
+                <div class="service-card-footer">
+                  <span class="fw-bold text-primary">$8.50 - $14.50 / ft</span>
+                  <a href="service-details.html?service=seamless-installation" class="fw-bold text-decoration-none small">
+                    View Details <i class="bi bi-chevron-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Downspout Cleaning & Jetting -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-card-img-wrap">
+                <img src="assets/images/services/service-downspout.jpg" alt="Downspout Hydro Flushing and Jetting" class="service-card-img" loading="lazy">
+                <span class="service-card-badge">Maintenance</span>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-icon"><i class="bi bi-water"></i></div>
+                <h4 class="service-card-title"><a href="service-details.html?service=downspout-cleaning">Downspout Cleaning &amp; Flush</a></h4>
+                <p class="service-card-desc">High-pressure rotary snaking and jetting to clear compacted leaf plugs from elbows and subterranean drain lines.</p>
+                <div class="service-card-footer">
+                  <span class="fw-bold text-primary">From $75</span>
+                  <a href="service-details.html?service=downspout-cleaning" class="fw-bold text-decoration-none small">
+                    View Details <i class="bi bi-chevron-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Gutter Repair & Realignment -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-card-img-wrap">
+                <img src="assets/images/services/service-repair.jpg" alt="Technician repairing gutter joints and hidden screw hangers" class="service-card-img" loading="lazy">
+                <span class="service-card-badge">Repair</span>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-icon"><i class="bi bi-tools"></i></div>
+                <h4 class="service-card-title"><a href="service-details.html?service=gutter-repair">Gutter Repair &amp; Realignment</a></h4>
+                <p class="service-card-desc">Re-pitching standing water pockets, resealing leaking miter corners, and anchoring loose gutters with heavy-duty screw brackets.</p>
+                <div class="service-card-footer">
+                  <span class="fw-bold text-primary">From $95</span>
+                  <a href="service-details.html?service=gutter-repair" class="fw-bold text-decoration-none small">
+                    View Details <i class="bi bi-chevron-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5: Gutter Guard Micro-Mesh -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-card-img-wrap">
+                <img src="assets/images/services/service-guards.jpg" alt="Stainless steel micro mesh gutter guard filtering leaves and water" class="service-card-img" loading="lazy">
+                <span class="service-card-badge">Protection</span>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-icon"><i class="bi bi-shield-shaded"></i></div>
+                <h4 class="service-card-title"><a href="service-details.html?service=gutter-guards">Micro-Mesh Gutter Guards</a></h4>
+                <p class="service-card-desc">Surgical-grade stainless steel micro-mesh that blocks pine needles and debris while pulling torrential water in.</p>
+                <div class="service-card-footer">
+                  <span class="fw-bold text-primary">$7.50 - $12.00 / ft</span>
+                  <a href="service-details.html?service=gutter-guards" class="fw-bold text-decoration-none small">
+                    View Details <i class="bi bi-chevron-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6: Commercial Gutter Services -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-card-img-wrap">
+                <img src="assets/images/services/service-commercial.jpg" alt="Commercial Box Gutter Maintenance with Boom Lift" class="service-card-img" loading="lazy">
+                <span class="service-card-badge">Commercial</span>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-icon"><i class="bi bi-building"></i></div>
+                <h4 class="service-card-title"><a href="service-details.html?service=commercial-cleaning">Commercial Gutter Maintenance</a></h4>
+                <p class="service-card-desc">Industrial box gutters, roof scupper boxes, and warehouse downspout systems serviced with boom lifts and full OSHA compliance.</p>
+                <div class="service-card-footer">
+                  <span class="fw-bold text-primary">Custom Quote</span>
+                  <a href="service-details.html?service=commercial-cleaning" class="fw-bold text-decoration-none small">
+                    View Details <i class="bi bi-chevron-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before & After Interactive Showcase -->
+    <section class="py-5 bg-body-tertiary" id="beforeAfterSection">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-tag">Visible Results</span>
+            <h2 class="section-title">See the Real Transformation</h2>
+            <p class="text-secondary lead">
+              Drag the interactive slider to see how our thorough hand-cleaning and high-volume flush restores clogged, overgrown gutters to spotless condition.
+            </p>
+            <ul class="list-unstyled d-flex flex-column gap-3 text-secondary my-4">
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                <span>Complete removal of damp organic mulch and root seedlings</span>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                <span>Hydro-flushing clears downspout elbow bends and ground drops</span>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                <span>All collected debris bagged and hauled away—zero yard mess</span>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#estimateModal">
+              Get Your Gutters Cleaned
+            </button>
+          </div>
+          <div class="col-lg-7">
+            <!-- Interactive Slider Component -->
+            <div class="before-after-container position-relative" aria-label="Interactive before and after gutter cleaning comparison slider">
+              <div class="before-image-wrapper">
+                <img src="assets/images/projects/project-before.jpg" alt="Before: Clogged gutter overflowing with rotting leaves, moss, and weeds">
+                <span class="slider-badge slider-badge-before">Before Cleaning</span>
+              </div>
+              <div class="after-image-wrapper">
+                <img src="assets/images/projects/project-after.jpg" alt="After: Spotless clean gleaming aluminum gutter with unobstructed drainage">
+                <span class="slider-badge slider-badge-after">After Cleaning</span>
+              </div>
+              <div class="slider-handle" aria-hidden="true">
+                <i class="bi bi-arrow-left-right"></i>
+              </div>
+            </div>
+            <p class="text-center text-muted small mt-2">
+              <i class="bi bi-hand-index-thumb me-1"></i> Drag slider or click image to compare before &amp; after
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How Our Service Works -->
+    <section class="py-5 bg-white" id="howItWorks">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Seamless Process</span>
+          <h2 class="section-title">How Our Gutter Service Works</h2>
+          <p class="section-subtitle">
+            From your initial instant quote to our spotless zero-mess ground polish, here is our simple 4-step workflow:
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number-bubble">01</div>
+              <h5 class="fw-bold mb-2">Instant Estimate</h5>
+              <p class="text-secondary small mb-0">
+                Submit your home details online or call us. Receive a transparent price quote within minutes with zero hidden trip fees.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number-bubble">02</div>
+              <h5 class="fw-bold mb-2">Safety Setup &amp; Inspection</h5>
+              <p class="text-secondary small mb-0">
+                Our certified technicians arrive with standoff ladders and harnesses, performing a multi-point roofline and slope check.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number-bubble">03</div>
+              <h5 class="fw-bold mb-2">Deep Clean &amp; Flush</h5>
+              <p class="text-secondary small mb-0">
+                All debris is hand-collected directly into contractor bags. Downspouts are rotary snaked and water-flushed to ground outlets.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number-bubble">04</div>
+              <h5 class="fw-bold mb-2">Photo Report &amp; Cleanup</h5>
+              <p class="text-secondary small mb-0">
+                Driveways and patios are thoroughly blown clean. We send before-and-after digital photos straight to your email.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Preview Section -->
+    <section class="py-5 bg-body-tertiary" id="pricingPreview">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Transparent Rates</span>
+          <h2 class="section-title">Clear, Upfront Pricing</h2>
+          <p class="section-subtitle">
+            No surprise add-ons. Sample estimates below reflect standard single and two-story residential homes.
+          </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card">
+              <h5 class="fw-bold mb-1">Essential Clean</h5>
+              <p class="text-muted small">Ideal for 1-story homes with light foliage</p>
+              <div class="pricing-price my-3">$150<span class="fs-6 text-muted fw-normal"> / est. avg</span></div>
+              <ul class="pricing-features-list">
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Hand-cleaning all gutter troughs</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Bagging all debris (zero lawn mess)</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Visual downspout drop check</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Grounds blow-off &amp; cleanup</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> 30-Day No-Clog Guarantee</li>
+              </ul>
+              <a href="pricing.html" class="btn btn-outline-primary w-100">See Pricing Guide</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card featured">
+              <span class="pricing-featured-badge">Most Popular</span>
+              <h5 class="fw-bold mb-1">Deep Clean &amp; Flush</h5>
+              <p class="text-muted small">Recommended for 2-story homes &amp; heavy trees</p>
+              <div class="pricing-price my-3">$225<span class="fs-6 text-muted fw-normal"> / est. avg</span></div>
+              <ul class="pricing-features-list">
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Complete hand-cleaning &amp; bagging</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> High-pressure hydro-flush of all downspouts</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Multi-point slope &amp; miter seam audit</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Roof valley &amp; dormer debris removal</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Digital before-and-after photo report</li>
+              </ul>
+              <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#estimateModal">Book This Service</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card">
+              <h5 class="fw-bold mb-1">Seamless Installation</h5>
+              <p class="text-muted small">Complete on-site custom roll-formed system</p>
+              <div class="pricing-price my-3">$9.50<span class="fs-6 text-muted fw-normal"> / lin. ft</span></div>
+              <ul class="pricing-features-list">
+                <li><i class="bi bi-check2 text-success fw-bold"></i> .032 Heavy-gauge continuous aluminum</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Choice of 28+ baked enamel colors</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Heavy-duty hidden screw hangers</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> Custom downspouts &amp; box miters</li>
+                <li><i class="bi bi-check2 text-success fw-bold"></i> 20-Year Material Warranty</li>
+              </ul>
+              <a href="pricing.html" class="btn btn-outline-primary w-100">Calculate Exact Cost</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Customer Testimonials -->
+    <section class="py-5 bg-white" id="testimonials">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Homeowner Feedback</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-subtitle">Real experiences from homeowners who trust ApexGutter for roofline and water defense.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "Our two-story house has mature oaks right over the roof. ApexGutter hand-scooped every inch, hydro-flushed our buried drain lines, and left our flower beds cleaner than when they arrived. Outstanding service!"
+              </p>
+              <div class="testimonial-client">
+                <img src="assets/images/clients/client-1.jpg" alt="Robert Henderson, Homeowner client" class="client-avatar">
+                <div>
+                  <h6 class="fw-bold mb-0">Robert Henderson</h6>
+                  <small class="text-muted"><i class="bi bi-patch-check-fill text-primary me-1"></i>Verified Homeowner • Oakridge</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "We upgraded our leaking 20-year-old sectional gutters to seamless .032 aluminum with ApexGutter. Their mobile truck extruded the continuous pieces right in our driveway. Zero seams, zero leaks during last night's storm!"
+              </p>
+              <div class="testimonial-client">
+                <img src="assets/images/clients/client-2.jpg" alt="Elena Rostova, Homeowner client" class="client-avatar">
+                <div>
+                  <h6 class="fw-bold mb-0">Elena Rostova</h6>
+                  <small class="text-muted"><i class="bi bi-patch-check-fill text-primary me-1"></i>Verified Homeowner • West Hills</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "I manage a 16-unit commercial complex. ApexGutter handles our annual box gutter cleanouts with aerial boom lifts and sends full photo inspection reports for our insurance underwriters. Professional and reliable."
+              </p>
+              <div class="testimonial-client">
+                <img src="assets/images/clients/client-3.jpg" alt="Marcus Thorne, Commercial property manager" class="client-avatar">
+                <div>
+                  <h6 class="fw-bold mb-0">Marcus Thorne</h6>
+                  <small class="text-muted"><i class="bi bi-building-check text-primary me-1"></i>Property Manager • Metro Plaza</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area Quick Checker -->
+    <section class="py-5 bg-body-tertiary" id="serviceArea">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-tag">Local Coverage</span>
+            <h2 class="section-title">Serving Your Neighborhood</h2>
+            <p class="text-secondary lead">
+              Our fleet of mobile gutter service trucks operates across the entire metropolitan area and surrounding suburban counties.
+            </p>
+            <div class="row g-3 my-3">
+              <div class="col-6">
+                <div class="p-2 border rounded-3 bg-white text-dark small fw-semibold">
+                  <i class="bi bi-geo-fill text-primary me-1"></i> North Metro &amp; Suburbs
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 border rounded-3 bg-white text-dark small fw-semibold">
+                  <i class="bi bi-geo-fill text-primary me-1"></i> West Valley &amp; Foothills
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 border rounded-3 bg-white text-dark small fw-semibold">
+                  <i class="bi bi-geo-fill text-primary me-1"></i> South Bay &amp; Coastal
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 border rounded-3 bg-white text-dark small fw-semibold">
+                  <i class="bi bi-geo-fill text-primary me-1"></i> Eastside Heights
+                </div>
+              </div>
+            </div>
+            <p class="small text-muted mb-0">
+              <i class="bi bi-clock-history me-1"></i> Same-day emergency response available during storm warnings.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-checker-box p-4 rounded-4 shadow-sm bg-white">
+              <h5 class="fw-bold mb-2">Check Your Zip Code</h5>
+              <p class="small text-secondary mb-3">Enter your 5-digit zip code to verify immediate service truck availability in your neighborhood.</p>
+              <div class="input-group mb-3">
+                <input type="text" id="zipCheckInput" class="form-control" placeholder="e.g. 90210" maxlength="5">
+                <button class="btn btn-primary" type="button" id="zipCheckBtn">Check Availability</button>
+              </div>
+              <div id="zipResult" class="small py-2 px-3 rounded-3 d-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="py-5 bg-white" id="faqSection">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about professional gutter maintenance and seamless installation.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="homeFaqAccordion">
+              <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How often should I clean my gutters?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#homeFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    Most residential homes require cleaning at least twice a year: once in late spring (to remove pollen, blossoms, and seed tassels) and once in late autumn (after all deciduous leaves have fallen). If your roofline is surrounded by tall pine trees, quarterly cleanings are recommended to prevent needle blockages.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Do I have to be home while you clean my gutters?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#homeFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    No! As long as our crews have exterior access around your property (gates unlocked, dogs kept inside, and an outdoor water spigot turned on for downspout testing), we can complete the work while you are away. We send before-and-after photos directly to your smartphone.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Why choose seamless gutters over store-bought sectional gutters?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#homeFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    Sectional gutters have seams every 10 feet. Over time, temperature swings cause joints to leak, sag, and catch debris. Seamless gutters are custom-extruded on-site in a continuous length, eliminating 99% of leak points and providing superior hydraulic flow and curb appeal.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                <h3 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Are your technicians insured and safety trained?
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#homeFaqAccordion">
+                  <div class="accordion-body text-secondary">
+                    Yes. All ApexGutter technicians are fully covered by a $2,000,000 General Liability policy and Workers' Compensation. Crews use OSHA-compliant harness tie-offs and specialized ladder standoffs that protect your gutters and roof shingles from scratches and dents.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Call To Action Banner -->
+    <section class="py-5 bg-primary text-white" id="ctaBanner">
+      <div class="container py-4 text-center">
+        <h2 class="display-6 fw-bold mb-3 text-white">Protect Your Home Before the Next Heavy Storm</h2>
+        <p class="lead mb-4 text-white-50 max-w-600 mx-auto">
+          Schedule your free, zero-obligation gutter inspection and estimate today. Fast dispatch, transparent rates, and guaranteed satisfaction.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <button type="button" class="btn btn-light btn-lg rounded-pill px-4 fw-bold text-primary shadow" data-bs-toggle="modal" data-bs-target="#estimateModal">
+            <i class="bi bi-calculator me-1"></i> Get a Free Estimate
+          </button>
+          <a href="tel:+18005554887" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold">
+            <i class="bi bi-telephone-fill me-1"></i> Call (800) 555-4887
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="footer-brand-wrap">
+            <a href="index.html" aria-label="ApexGutter Home">
+              <img src="assets/images/logo/logo-dark.svg" alt="ApexGutter Logo" class="brand-logo-img">
+            </a>
+          </div>
+          <p class="small text-secondary mb-3">
+            ApexGutter is the premier residential and commercial roofline water protection contractor. Specializing in hand gutter cleanouts, hydro-jetting downspout clearing, seamless aluminum fabrication, and micro-mesh gutter guards.
+          </p>
+          <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home 1 — Services</a></li>
+            <li><a href="index-2.html">Home 2 — Rainwater</a></li>
+            <li><a href="about.html">About Our Team</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="pricing.html">Pricing Guide</a></li>
+            <li><a href="blog.html">Gutter Care Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=residential-cleaning">Residential Cleaning</a></li>
+            <li><a href="service-details.html?service=commercial-cleaning">Commercial Maintenance</a></li>
+            <li><a href="service-details.html?service=downspout-cleaning">Downspout Jetting</a></li>
+            <li><a href="service-details.html?service=seamless-installation">Seamless Aluminum</a></li>
+            <li><a href="service-details.html?service=gutter-repair">Gutter Realignment</a></li>
+            <li><a href="service-details.html?service=gutter-guards">Micro-Mesh Guards</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Us</h5>
+          <ul class="footer-links footer-contact-list">
+            <li>
+              <i class="bi bi-telephone-fill footer-contact-icon"></i>
+              <a href="tel:+18005554887">+1 (800) 555-4887</a>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill footer-contact-icon"></i>
+              <a href="mailto:service@apexgutter.com">service@apexgutter.com</a>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
+              <span>742 Evergreen Eaves Way, Suite 400</span>
+            </li>
+          </ul>
+          <div class="footer-status-box">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="badge bg-success">Active Crew Status</span>
+            </div>
+            <p class="text-secondary small">Rainstorm response units on standby for emergency gutter overflows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-secondary">&copy; 2026 ApexGutter Co. All rights reserved.</p>
+        <div class="d-flex align-items-center gap-3 text-secondary small">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <span class="text-secondary opacity-50">•</span>
+          <a href="terms-of-care.html">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back To Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Free Estimate Request Modal (Shared Component) -->
+  <div class="modal fade" id="estimateModal" tabindex="-1" aria-labelledby="estimateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow-lg overflow-hidden">
+        <div class="modal-header bg-primary text-white py-3">
+          <h5 class="modal-title d-flex align-items-center gap-2" id="estimateModalLabel">
+            <i class="bi bi-calculator"></i>
+            <span>Request a Free Gutter Estimate</span>
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-secondary small mb-3">
+            Fill out your property details below. Our estimation calculator matches your roofline measurements with our local service rates.
+          </p>
+          <form id="modalEstimateForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="modalFullName" class="form-label small fw-bold">Full Name *</label>
+                <input type="text" class="form-control" id="modalFullName" name="name" placeholder="John Smith" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalEmail" class="form-label small fw-bold">Email Address *</label>
+                <input type="email" class="form-control" id="modalEmail" name="email" placeholder="john@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalPhone" class="form-label small fw-bold">Phone Number *</label>
+                <input type="tel" class="form-control" id="modalPhone" name="phone" placeholder="(555) 000-0000" required>
+                <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="modalServiceType" class="form-label small fw-bold">Service Required *</label>
+                <select class="form-select" id="modalServiceType" name="service" required>
+                  <option value="" selected disabled>Select a gutter service...</option>
+                  <option value="residential-cleaning">Residential Gutter Cleaning &amp; Flush</option>
+                  <option value="commercial-cleaning">Commercial Gutter Maintenance</option>
+                  <option value="downspout-cleaning">Downspout Cleaning &amp; Jetting</option>
+                  <option value="seamless-installation">Seamless Aluminum Installation</option>
+                  <option value="gutter-repair">Gutter Repair &amp; Realignment</option>
+                  <option value="gutter-guards">Micro-Mesh Gutter Guards</option>
+                  <option value="gutter-inspection">Multi-Point Gutter Inspection</option>
+                  <option value="seasonal-maintenance">Seasonal Maintenance Membership</option>
+                </select>
+                <div class="invalid-feedback">Please choose a service.</div>
+              </div>
+              <div class="col-12">
+                <label for="modalMessage" class="form-label small fw-bold">Property Details / Estimate Notes</label>
+                <textarea class="form-control" id="modalMessage" name="message" rows="3" placeholder="Approximate home stories, linear footage, or specific water issues..."></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="agreed" id="modalPrivacyAgree" name="agree" required>
+                  <label class="form-check-label small text-secondary" for="modalPrivacyAgree">
+                    I agree to receive a free estimate and accept the terms of exterior demonstration service.
+                  </label>
+                  <div class="invalid-feedback">You must check the agreement box before submitting.</div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end gap-2 mt-4 pt-3 border-top">
+              <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary rounded-pill px-4 fw-bold">
+                <i class="bi bi-send me-1"></i> Submit Demo Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>if (typeof bootstrap === "undefined") { document.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"><\/script>'); }</script>
+  <script src="assets/js/services-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Zip Code Checker Inline Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const zipBtn = document.getElementById('zipCheckBtn');
+      const zipInput = document.getElementById('zipCheckInput');
+      const zipResult = document.getElementById('zipResult');
+
+      if (zipBtn && zipInput && zipResult) {
+        zipBtn.addEventListener('click', function() {
+          const zip = zipInput.value.trim();
+          if (zip.length !== 5 || isNaN(zip)) {
+            zipResult.className = 'small py-2 px-3 rounded-3 alert alert-danger mb-0 mt-2';
+            zipResult.innerHTML = '<i class="bi bi-exclamation-circle me-1"></i> Please enter a valid 5-digit zip code.';
+            zipResult.classList.remove('d-none');
+            return;
+          }
+
+          zipResult.className = 'small py-2 px-3 rounded-3 alert alert-success mb-0 mt-2';
+          zipResult.innerHTML = `<i class="bi bi-check-circle-fill me-1"></i> <strong>Good news!</strong> We have active service crews operating in zip code <strong>${zip}</strong> with next-day scheduling available.`;
+          zipResult.classList.remove('d-none');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

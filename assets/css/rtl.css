@@ -1,0 +1,91 @@
+/* ==========================================================================
+   ApexGutter - RTL (Right-to-Left) Stylesheet
+   For Arabic and Hebrew Layout Compatibility
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .dropdown-menu {
+  text-align: right;
+  left: auto !important;
+  right: 0 !important;
+}
+
+[dir="rtl"] .home-dropdown-item:hover {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .home-dropdown-item.active {
+  border-left: none;
+  border-right: 3px solid var(--sp-primary);
+}
+
+[dir="rtl"] .hero-floating-card {
+  left: auto;
+  right: 24px;
+}
+
+[dir="rtl"] .service-card-badge {
+  right: auto;
+  left: 14px;
+}
+
+[dir="rtl"] .slider-badge-before {
+  right: auto;
+  left: 18px;
+}
+
+[dir="rtl"] .slider-badge-after {
+  left: auto;
+  right: 18px;
+}
+
+[dir="rtl"] .after-image-wrapper {
+  left: auto;
+  right: 0;
+  border-right: none;
+  border-left: 3px solid #ffffff;
+}
+
+[dir="rtl"] .slider-handle {
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -22px;
+}
+
+[dir="rtl"] .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .back-to-top-btn {
+  right: auto;
+  left: 28px;
+}
+
+[dir="rtl"] .bi-arrow-right::before {
+  content: "\f12f"; /* bi-arrow-left */
+}
+
+[dir="rtl"] .bi-chevron-right::before {
+  content: "\f284"; /* bi-chevron-left */
+}
+
+[dir="rtl"] .form-check {
+  padding-left: 0;
+  padding-right: 1.5em;
+}
+
+[dir="rtl"] .form-check .form-check-input {
+  float: right;
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+
+[dir="rtl"] .modal-header .btn-close {
+  margin: -0.5rem auto -0.5rem -0.5rem;
+}
