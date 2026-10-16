@@ -26,9 +26,7 @@
   <link rel="stylesheet" href="assets/css/rtl.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 
-  <!-- Leaflet Map CSS (Local with CDN fallback) -->
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- Leaflet Map CSS not needed for native OSM embed -->
 </head>
 <body>
 
@@ -293,55 +291,35 @@
                 </p>
               </div>
 
-              <!-- Real Interactive Map & Regional Service Coverage -->
-              <div class="p-4 rounded-4 bg-body-tertiary border shadow-sm">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <h6 class="fw-bold mb-0 d-flex align-items-center gap-2">
-                    <i class="bi bi-geo-alt-fill text-primary fs-5"></i>
-                    <span>Service Zone &amp; Headquarters Map</span>
-                  </h6>
-                  <span class="badge bg-success-subtle text-success border border-success-subtle d-inline-flex align-items-center gap-1">
-                    <span class="spinner-grow spinner-grow-sm text-success" style="width: 7px; height: 7px;" role="status"></span>
-                    Real Live Map
-                  </span>
-                </div>
-                <p class="small text-secondary mb-3">
-                  Interactive real map of our central fabrication shop &amp; 4 active metropolitan mobile dispatch sectors:
-                </p>
-
-                <!-- Real Interactive Map Container -->
-                <div class="position-relative rounded-3 overflow-hidden border shadow-sm mb-3">
-                  <div id="contactRealMap" class="real-map-container" style="height: 280px; width: 100%;">
-                    <!-- Native OpenStreetMap real map embed (100% frontend HTML, zero backend, zero python) -->
-                    <iframe 
-                      class="w-100 h-100 border-0"
-                      src="https://www.openstreetmap.org/export/embed.html?bbox=-122.760%2C45.465%2C-122.580%2C45.565&amp;layer=mapnik&amp;marker=45.5152%2C-122.6784" 
-                      loading="lazy" 
-                      title="ApexGutter Service Area &amp; Headquarters Map"
-                      allowfullscreen>
-                    </iframe>
+              <!-- Location Map Card (Matching reference design) -->
+              <div class="location-map-card">
+                <div class="location-map-header">
+                  <div class="location-map-header-top">
+                    <i class="bi bi-map location-map-icon" aria-hidden="true"></i>
+                    <h5 class="location-map-title">ApexGutter Headquarters &amp; Dispatch Map</h5>
+                  </div>
+                  <div class="location-map-address">
+                    742 Evergreen Eaves Way, Suite 400
                   </div>
                 </div>
 
-                <!-- Location details & external map links -->
-                <div class="d-flex flex-column gap-2">
-                  <div class="d-flex justify-content-between align-items-center small text-secondary">
-                    <span>
-                      <i class="bi bi-building text-primary me-1"></i>
-                      <strong class="text-dark">742 Evergreen Eaves Way</strong>, Suite 400
-                    </span>
-                    <span class="badge bg-primary-subtle text-primary">3 Units Active</span>
-                  </div>
-                  <div class="d-flex gap-2 pt-1">
-                    <a href="https://www.google.com/maps/search/?api=1&query=45.5152,-122.6784" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary flex-fill d-inline-flex justify-content-center align-items-center gap-1">
-                      <i class="bi bi-google"></i>
-                      <span>Open in Google Maps</span>
-                    </a>
-                    <a href="https://www.openstreetmap.org/?mlat=45.5152&mlon=-122.6784#map=14/45.5152/-122.6784" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary flex-fill d-inline-flex justify-content-center align-items-center gap-1">
-                      <i class="bi bi-arrows-fullscreen"></i>
-                      <span>Full Screen Map</span>
-                    </a>
-                  </div>
+                <!-- Map Frame -->
+                <div class="location-map-frame" id="contactRealMap">
+                  <iframe 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-122.705%2C45.500%2C-122.650%2C45.530&amp;layer=mapnik&amp;marker=45.5152%2C-122.6784" 
+                    loading="lazy" 
+                    title="ApexGutter Headquarters &amp; Dispatch Map - 742 Evergreen Eaves Way"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+
+                <!-- Footer Details & Larger Map Link -->
+                <div class="location-map-footer">
+                  <span class="location-map-amenity">Free customer parking &amp; gutter sample showroom available.</span>
+                  <a href="https://www.openstreetmap.org/?mlat=45.5152&amp;mlon=-122.6784#map=15/45.5152/-122.6784" target="_blank" rel="noopener noreferrer" class="location-map-link">
+                    <span>Larger Map</span>
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -437,8 +415,6 @@
   <!-- Scripts -->
   <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <script>if (typeof bootstrap === "undefined") { document.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"><\/script>'); }</script>
-  <script src="assets/vendor/leaflet/leaflet.js"></script>
-  <script>if (typeof L === "undefined") { document.write('<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>'); }</script>
   <script src="assets/js/services-data.js"></script>
   <script src="assets/js/blog-data.js"></script>
   <script src="assets/js/calculator.js"></script>

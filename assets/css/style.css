@@ -1291,3 +1291,120 @@ img {
   background-image: url('../images/services/service-residential.jpg');
 }
 
+/* ==========================================================================
+   Location Map Card (Matching reference design in Image 2)
+   ========================================================================== */
+.location-map-card {
+  background: #091a13;
+  border: 1px solid rgba(52, 211, 153, 0.22);
+  border-radius: 18px;
+  padding: 1.35rem 1.35rem 1.15rem 1.35rem;
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.35);
+  color: #f8fafc;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.location-map-card:hover {
+  border-color: rgba(52, 211, 153, 0.4);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.45);
+}
+
+.location-map-header {
+  margin-bottom: 0.95rem;
+}
+
+.location-map-header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.3rem;
+}
+
+.location-map-icon {
+  color: #34d399;
+  font-size: 1.35rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.location-map-title {
+  font-family: var(--sp-font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.location-map-address {
+  font-family: var(--sp-font-body);
+  color: #9db8a8;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.location-map-frame {
+  position: relative;
+  width: 100%;
+  height: 275px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #e5e3df;
+  margin-bottom: 0.95rem;
+}
+
+.location-map-frame iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+  display: block;
+}
+
+.location-map-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 0.15rem;
+}
+
+.location-map-amenity {
+  color: #9db8a8;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.location-map-link {
+  color: #34d399;
+  font-weight: 600;
+  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.location-map-link i {
+  font-size: 0.82rem;
+  transition: transform 0.2s ease;
+}
+
+.location-map-link:hover {
+  color: #6ee7b7;
+  text-decoration: none;
+}
+
+.location-map-link:hover i {
+  transform: translate(2px, -2px);
+}
+
+

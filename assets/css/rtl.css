@@ -89,3 +89,8 @@
 [dir="rtl"] .modal-header .btn-close {
   margin: -0.5rem auto -0.5rem -0.5rem;
 }
+
+[dir="rtl"] .location-map-link:hover i {
+  transform: translate(-2px, -2px);
+}
+

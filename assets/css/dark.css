@@ -181,27 +181,11 @@
   border-color: rgba(255, 255, 255, 0.08);
 }
 
-/* Real Map Dark Mode */
-[data-bs-theme="dark"] .real-map-container {
-  background-color: #0d1e34;
-}
-
-[data-bs-theme="dark"] .leaflet-popup-content-wrapper {
-  background-color: #0f1e33 !important;
-  color: #f8fafc !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-}
-
-[data-bs-theme="dark"] .leaflet-popup-tip {
-  background-color: #0f1e33 !important;
-}
-
-[data-bs-theme="dark"] .leaflet-container a.leaflet-popup-close-button {
-  color: #94a3b8 !important;
-}
-
-[data-bs-theme="dark"] .leaflet-tile-pane {
-  filter: brightness(0.85) invert(1) hue-rotate(180deg) saturate(0.8);
+/* Location Map Dark Mode */
+[data-bs-theme="dark"] .location-map-card {
+  background-color: #07150f;
+  border-color: rgba(52, 211, 153, 0.28);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.6);
 }
 
 [data-bs-theme="dark"] .article-content {

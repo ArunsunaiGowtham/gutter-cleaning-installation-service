@@ -466,4 +466,21 @@ img, svg, video, canvas, iframe {
   .step-card {
     padding: 1.25rem 0.85rem;
   }
+
+  .location-map-card {
+    padding: 1.15rem 0.95rem 0.95rem 0.95rem;
+    border-radius: 14px;
+  }
+
+  .location-map-frame {
+    height: 230px;
+    margin-bottom: 0.75rem;
+  }
+
+  .location-map-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
+

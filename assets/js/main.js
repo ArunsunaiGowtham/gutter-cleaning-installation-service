@@ -573,95 +573,12 @@
   // 10. Contact Page Real Interactive Map (100% Client-Side, No Python/Backend)
   // --------------------------------------------------------------------------
   function initContactMap() {
+    // Native OpenStreetMap embed format matching reference design.
+    // Self-contained iframe without external tile scraping or 403 tile blocks.
     const mapContainer = document.getElementById('contactRealMap');
     if (!mapContainer) return;
-
-    // Central Headquarters coordinates for 742 Evergreen Eaves Way
-    const hqLat = 45.5152;
-    const hqLng = -122.6784;
-
-    if (typeof L !== 'undefined') {
-      try {
-        // Clear iframe placeholder for Leaflet interactive initialization
-        mapContainer.innerHTML = '';
-
-        // Correct default Leaflet marker assets when loaded locally or via CDN
-        delete L.Icon.Default.prototype._getIconUrl;
-        L.Icon.Default.mergeOptions({
-          iconRetinaUrl: 'assets/vendor/leaflet/images/marker-icon-2x.png',
-          iconUrl: 'assets/vendor/leaflet/images/marker-icon.png',
-          shadowUrl: 'assets/vendor/leaflet/images/marker-shadow.png',
-        });
-
-        const map = L.map('contactRealMap', {
-          center: [hqLat, hqLng],
-          zoom: 13,
-          scrollWheelZoom: false, // Prevents unintended zoom when scrolling page
-          zoomControl: true
-        });
-
-        // Real OpenStreetMap Tile Layer
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
-        }).addTo(map);
-
-        // Headquarters Marker with Interactive Info Popup
-        const hqMarker = L.marker([hqLat, hqLng]).addTo(map);
-        hqMarker.bindPopup(`
-          <div style="font-family:'Plus Jakarta Sans',sans-serif; min-width:190px;">
-            <div style="font-weight:700; color:#0284c7; font-size:13px; margin-bottom:3px;">
-              <i class="bi bi-shield-check"></i> ApexGutter Central HQ
-            </div>
-            <div style="font-size:12px; color:#475569; margin-bottom:6px;">
-              742 Evergreen Eaves Way, Suite 400
-            </div>
-            <div style="font-size:11px; color:#16a34a; font-weight:600; margin-bottom:8px;">
-              Mon–Sat: 7:00 AM – 7:00 PM
-            </div>
-            <a href="https://www.google.com/maps/search/?api=1&query=45.5152,-122.6784" target="_blank" rel="noopener noreferrer" style="display:block; text-align:center; padding:5px 8px; font-size:11px; font-weight:600; color:#fff; background:#0284c7; border-radius:6px; text-decoration:none;">
-              Get Driving Directions
-            </a>
-          </div>
-        `).openPopup();
-
-        // 25-Mile Service Zone Coverage Ring
-        L.circle([hqLat, hqLng], {
-          color: '#0284c7',
-          fillColor: '#38bdf8',
-          fillOpacity: 0.12,
-          weight: 2,
-          dashArray: '6, 6',
-          radius: 7500
-        }).addTo(map);
-
-        // Mobile Service Dispatch Units in surrounding sectors
-        const mobileUnits = [
-          { name: 'Unit 1 (North Dispatch)', coords: [45.545, -122.650] },
-          { name: 'Unit 2 (South Dispatch)', coords: [45.485, -122.700] },
-          { name: 'Unit 3 (East Dispatch)', coords: [45.525, -122.600] }
-        ];
-
-        mobileUnits.forEach(u => {
-          const unitMarker = L.circleMarker(u.coords, {
-            radius: 6,
-            color: '#10b981',
-            fillColor: '#10b981',
-            fillOpacity: 0.9,
-            weight: 2
-          }).addTo(map);
-          unitMarker.bindTooltip(`<strong style="font-size:11px;">${u.name}</strong><br><span style="font-size:10px; color:#64748b;">Active Mobile Unit</span>`, { direction: 'top' });
-        });
-
-        // Ensure Leaflet calculates sizing correctly after render
-        setTimeout(() => {
-          map.invalidateSize();
-        }, 250);
-      } catch (err) {
-        console.warn('Leaflet interactive map initialization note:', err);
-      }
-    }
   }
+
 
   // --------------------------------------------------------------------------
   // Initialization
