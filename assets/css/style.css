@@ -928,9 +928,12 @@ img {
   padding-left: 0 !important;
 }
 
-.site-footer .brand-logo-img {
+.site-footer .brand-logo-img,
+.site-footer .footer-brand-wrap img {
   height: 38px;
   width: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .site-footer h5 {

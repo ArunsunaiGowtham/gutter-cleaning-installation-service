@@ -218,3 +218,16 @@
   color: #cbd5e1;
 }
 
+/* Footer in Dark Mode */
+[data-bs-theme="dark"] .site-footer {
+  background-color: #060e18;
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-bs-theme="dark"] .site-footer .brand-logo-img,
+[data-bs-theme="dark"] .site-footer .footer-brand-wrap img {
+  display: block;
+  height: 38px;
+  width: auto;
+  opacity: 1;
+}

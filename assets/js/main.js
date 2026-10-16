@@ -11,7 +11,20 @@
   // 1. Theme Management (Light / Dark Mode)
   // --------------------------------------------------------------------------
   function initTheme() {
-    const savedTheme = localStorage.getItem('apexgutter_theme') || 'light';
+    let savedTheme = 'light';
+    try {
+      savedTheme = localStorage.getItem('apexgutter_theme');
+      if (!savedTheme) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          savedTheme = 'dark';
+        } else {
+          savedTheme = 'light';
+        }
+      }
+    } catch (e) {
+      savedTheme = 'light';
+    }
+
     applyTheme(savedTheme);
 
     const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
@@ -26,7 +39,11 @@
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-bs-theme', theme);
-    localStorage.setItem('apexgutter_theme', theme);
+    try {
+      localStorage.setItem('apexgutter_theme', theme);
+    } catch (e) {
+      // Safe fallback if localStorage is disabled or restricted
+    }
 
     // Update icons and text
     const themeIcons = document.querySelectorAll('.theme-icon');
@@ -40,14 +57,21 @@
       }
     });
 
-    // Update Logo if available
-    const brandLogos = document.querySelectorAll('.brand-logo-img');
-    brandLogos.forEach(logo => {
+    // Update Header / Navigation Brand Logos to match theme
+    const headerBrandLogos = document.querySelectorAll('.site-header .brand-logo-img, .offcanvas .brand-logo-img');
+    headerBrandLogos.forEach(logo => {
       if (theme === 'dark') {
         logo.src = 'assets/images/logo/logo-dark.svg';
       } else {
         logo.src = 'assets/images/logo/logo.svg';
       }
+    });
+
+    // The footer has a dark background (#091a2b) across all themes,
+    // so the footer brand logo must ALWAYS remain high-contrast logo-dark.svg
+    const footerBrandLogos = document.querySelectorAll('.site-footer .brand-logo-img, .footer-brand-wrap img');
+    footerBrandLogos.forEach(logo => {
+      logo.src = 'assets/images/logo/logo-dark.svg';
     });
   }
 
