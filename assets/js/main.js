@@ -121,13 +121,16 @@
     const header = document.querySelector('.site-header');
     if (!header) return;
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
+    const onScroll = () => {
+      if (window.scrollY > 15) {
         header.classList.add('scrolled', 'shadow-sm');
       } else {
         header.classList.remove('scrolled', 'shadow-sm');
       }
-    });
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   }
 
   // --------------------------------------------------------------------------
