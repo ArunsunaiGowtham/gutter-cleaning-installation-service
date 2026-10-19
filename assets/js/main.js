@@ -163,7 +163,16 @@
   }
 
   function highlightActivePage() {
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    let currentPath = decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html');
+    if (!currentPath || currentPath === '/') currentPath = 'index.html';
+
+    // Map sub-detail pages to their primary parent nav item
+    const pageMapping = {
+      'service-details.html': 'services.html',
+      'blog-details.html': 'blog.html'
+    };
+    const targetPath = pageMapping[currentPath] || currentPath;
+
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .home-dropdown-item');
 
     navLinks.forEach(link => {
@@ -171,9 +180,14 @@
       if (!href) return;
       const cleanHref = href.split('?')[0].split('#')[0];
 
-      if (cleanHref === currentPath) {
+      // Exact match for target path or home variants
+      const isMatch = cleanHref === targetPath || 
+                     (targetPath === 'index.html' && cleanHref === 'index.html') ||
+                     (targetPath === 'index-2.html' && cleanHref === 'index-2.html');
+
+      if (isMatch) {
         link.classList.add('active');
-        // If it is in home dropdown, highlight parent
+        // If it is in home dropdown, highlight parent dropdown toggle
         const parentDropdown = link.closest('.dropdown');
         if (parentDropdown) {
           const parentToggle = parentDropdown.querySelector('.dropdown-toggle');
@@ -181,6 +195,12 @@
         }
       }
     });
+
+    // If current path is index.html or index-2.html, ensure Home toggle is active
+    if (targetPath === 'index.html' || targetPath === 'index-2.html') {
+      const homeToggle = document.getElementById('homeMenuDropdown');
+      if (homeToggle) homeToggle.classList.add('active');
+    }
   }
 
   // --------------------------------------------------------------------------
