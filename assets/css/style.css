@@ -74,12 +74,22 @@ img {
 }
 
 .navbar {
-  padding: 0.75rem 0;
+  padding: 0.65rem 0;
+}
+
+.site-header .navbar-brand {
+  padding: 0;
+  margin: 0;
+  margin-inline-end: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .brand-logo-img {
-  height: 42px;
+  height: 40px;
   width: auto;
+  display: block;
 }
 
 /* Remove default bootstrap caret on navbar dropdowns */
@@ -89,7 +99,6 @@ img {
 
 .site-header .dropdown-toggle .bi-chevron-down {
   font-size: 0.72rem;
-  margin-left: 0.25rem;
   transition: transform 0.25s ease;
   vertical-align: middle;
 }
@@ -132,6 +141,7 @@ img {
   align-items: center;
   gap: 0.6rem;
   flex-shrink: 0;
+  margin-inline-start: auto;
 }
 
 .nav-phone-link {
@@ -200,14 +210,14 @@ img {
   box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
 }
 
-/* Desktop Symmetrical Flex Centering */
+/* Desktop Clean Left-Aligned Navigation & Right-Aligned Actions */
 @media (min-width: 992px) {
   .site-header .navbar > .container,
   .site-header .navbar > .container-fluid {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
 
   .site-header #desktopNav {
@@ -222,10 +232,15 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 0 auto;
+    justify-content: flex-start;
+    flex-grow: 0;
+    margin: 0;
+    margin-inline-end: auto;
     gap: 0.25rem;
+  }
+
+  .site-header .header-actions {
+    margin-inline-start: auto;
   }
 }
 
