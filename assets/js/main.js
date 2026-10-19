@@ -421,9 +421,30 @@
     let currentCategory = 'all';
     let searchQuery = '';
 
+    // Support URL query parameter for category or search (e.g. blog.html?category=maintenance)
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+    const searchParam = urlParams.get('search');
+
+    if (categoryParam) {
+      const targetCategory = categoryParam.toLowerCase().trim();
+      const matchedBtn = Array.from(filterButtons).find(btn => (btn.getAttribute('data-category') || '').toLowerCase() === targetCategory);
+      if (matchedBtn) {
+        currentCategory = targetCategory;
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        matchedBtn.classList.add('active');
+      }
+    }
+
+    if (searchParam && searchInput) {
+      searchQuery = searchParam.trim();
+      searchInput.value = searchQuery;
+    }
+
     function renderBlogCards() {
       const filtered = BLOG_POSTS.filter(post => {
-        const matchesCategory = currentCategory === 'all' || post.category.toLowerCase().includes(currentCategory.toLowerCase());
+        // Exact category match
+        const matchesCategory = currentCategory === 'all' || post.category.toLowerCase() === currentCategory.toLowerCase();
         const matchesSearch = !searchQuery || 
           post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
           post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -552,10 +573,12 @@
     // Content
     articleContainer.innerHTML = post.content;
 
-    // Related posts (excluding current)
+    // Related posts (from the exact same category first, then fallback)
     const relatedContainer = document.getElementById('relatedPostsContainer');
     if (relatedContainer) {
-      const otherPosts = BLOG_POSTS.filter(p => p.id !== post.id).slice(0, 3);
+      const sameCategoryPosts = BLOG_POSTS.filter(p => p.id !== post.id && p.category.toLowerCase() === post.category.toLowerCase());
+      const otherCategoryPosts = BLOG_POSTS.filter(p => p.id !== post.id && p.category.toLowerCase() !== post.category.toLowerCase());
+      const otherPosts = [...sameCategoryPosts, ...otherCategoryPosts].slice(0, 3);
       relatedContainer.innerHTML = otherPosts.map(op => `
         <div class="col-md-4 mb-3">
           <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">

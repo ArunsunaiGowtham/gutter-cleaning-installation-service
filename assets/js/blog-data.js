@@ -7,7 +7,7 @@ const BLOG_POSTS = [
   {
     id: "why-regular-gutter-cleaning-matters",
     title: "Why Regular Gutter Cleaning Matters: Protect Your Home's Foundation",
-    category: "Gutter Maintenance",
+    category: "Maintenance",
     author: "Dave Miller, Lead Master Technician",
     date: "October 10, 2026",
     readTime: "5 min read",
@@ -427,6 +427,64 @@ const BLOG_POSTS = [
 
       <h2>4. True Cost of Ownership &amp; Home Valuation</h2>
       <p>Copper carries a higher upfront investment—typically 2.5 to 3.5 times the cost of seamless aluminum. However, because copper lasts three times longer and practically never requires replacement, its long-term cost per year of service is surprisingly competitive. For historical, Craftsman, Tudor, stone, and luxury custom residences, copper delivers immediate architectural prestige that significantly elevates appraisal and resale value.</p>
+    `
+  },
+  {
+    id: "preventing-gutter-pest-infestations",
+    title: "Preventing Mosquito & Pest Infestation in Stagnant Gutter Water: A Maintenance Guide",
+    category: "Maintenance",
+    author: "Dr. Evelyn Reed, Vector Pest & Environmental Health Consultant",
+    date: "October 18, 2026",
+    readTime: "5 min read",
+    image: "assets/images/blog/blog-pest-prevention.jpg",
+    excerpt: "Stagnant organic sludge in unpitched gutters creates prime breeding territory for mosquitoes, carpenter ants, and termites. Discover how routine seasonal sanitization stops pests at the roofline.",
+    content: `
+      <p class="lead">While many homeowners focus on water damage and foundation erosion, stagnant gutters harbor an equally concerning hazard: an ideal nursery for disease-carrying mosquitoes, carpenter ants, and nuisance pests.</p>
+
+      <h2>How Standing Gutter Water Becomes a Mosquito Haven</h2>
+      <p>Female mosquitoes require as little as a half-inch of standing water to lay hundreds of eggs. When unpitched gutters hold lingering puddles for more than 48 hours following a storm, decomposing leaves create a nutrient-rich organic broth that accelerates mosquito larva maturation.</p>
+
+      <h2>The Hidden Termite &amp; Carpenter Ant Highway</h2>
+      <p>Clogged gutters retain damp organic muck against your wooden fascia boards. This softened, decaying cellulose invites subterranean termites and carpenter ants directly into your roof truss system, bypassing ground chemical barriers entirely.</p>
+
+      <div class="p-4 my-4 rounded-3 bg-primary-subtle border-start border-4 border-primary">
+        <h5 class="fw-bold mb-2 text-primary"><i class="bi bi-bug-fill me-2"></i>Roofline Vector Control Tips</h5>
+        <p class="mb-0">Maintaining a continuous 1/4-inch drainage pitch and clearing decomposing muck prevents standing pools from lingering more than 24 hours, completely breaking the 7-to-10 day mosquito breeding cycle.</p>
+      </div>
+
+      <h2>Routine Preventive Measures</h2>
+      <ul>
+        <li><strong>Eliminate Low-Pitch Sagging:</strong> Re-align hanging brackets so water drains swiftly toward downspouts without forming stagnant standing pockets.</li>
+        <li><strong>Eco-Friendly Bio-Sanitizing Flushes:</strong> After manual scooping, flush channels with diluted citrus or enzyme washes that neutralize microbial biofilms.</li>
+        <li><strong>Inspect Gutter End Caps:</strong> Check that end cap seams are sealed tightly so moisture doesn't seep behind wood trims where wood-boring insects nest.</li>
+      </ul>
+    `
+  },
+  {
+    id: "why-drain-cleaners-ruin-gutters",
+    title: "Why You Should Never Pour Chemical Drain Cleaners Into Gutters & Downspouts",
+    category: "Maintenance",
+    author: "Simon Walsh, Forensic Corrosion & Chemical Drainage Analyst",
+    date: "October 15, 2026",
+    readTime: "5 min read",
+    image: "assets/images/blog/blog-drain-cleaners-warning.jpg",
+    excerpt: "Tempted to pour liquid drain unblocker down a clogged exterior downspout? Learn why caustic chemicals corrode aluminum rivets, poison lawn beds, and fail against organic roof muck.",
+    content: `
+      <p class="lead">When water pools around downspout elbows during heavy rainfall, homeowners are often tempted to grab household chemical drain cleaners. However, using caustic gels or sulfuric acid in exterior aluminum gutters is a recipe for expensive property damage.</p>
+
+      <h2>The Chemistry of Aluminum Corrosion</h2>
+      <p>Commercial plumbing drain cleaners contain concentrated sodium hydroxide (lye) or sulfuric acid designed to dissolve hair and grease in indoor PVC pipes. In contrast, residential gutters are manufactured from thin .027 to .032 architectural aluminum. Caustic alkalis trigger an exothermic chemical reaction with aluminum, eating through sheet metal, dissolving rivets, and stripping factory baked enamel.</p>
+
+      <h2>Why Chemical Cleaners Fail on Outdoor Blockages</h2>
+      <p>Indoor kitchen clogs consist of congealed fats and soaps. Outdoor gutter blockages consist of dense tree bark, oak tassels, and insoluble ceramic granules washed from asphalt shingles. Caustic cleaners cannot dissolve stone granules or mineral sand—the chemical simply pools above the clog, creating a hazardous toxic reservoir.</p>
+
+      <div class="alert alert-danger my-4">
+        <h5 class="fw-bold mb-1"><i class="bi bi-radioactive me-2"></i>Severe Landscape &amp; Pet Hazard</h5>
+        <p class="mb-0">When caustic chemicals eventually leak from gutter seams or discharge out the downspout elbow, they burn lawn grass, poison garden shrubs, and pose a severe chemical burn risk to pets walking across saturated turf.</p>
+      </div>
+
+      <h2>The Safe Professional Solution</h2>
+      <p>Never rely on chemicals for roof drainage. Mechanical clearing—using flexible snakes, rotary augers, or high-pressure hydro-jetting nozzles—removes 100% of physical debris without harming metal finishes or surrounding landscape ecology.</p>
     `
   }
 ];
