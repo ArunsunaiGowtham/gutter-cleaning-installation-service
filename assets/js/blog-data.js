@@ -486,6 +486,37 @@ const BLOG_POSTS = [
       <h2>The Safe Professional Solution</h2>
       <p>Never rely on chemicals for roof drainage. Mechanical clearing—using flexible snakes, rotary augers, or high-pressure hydro-jetting nozzles—removes 100% of physical debris without harming metal finishes or surrounding landscape ecology.</p>
     `
+  },
+  {
+    id: "fixing-leaking-gutter-corner-miters",
+    title: "Fixing Leaking Gutter Corners: Why Standard Caulk Fails & How Pros Reseal Miter Joints",
+    category: "Repairs",
+    author: "Brett Larson, Certified Gutter Restoration & Joinery Specialist",
+    date: "October 19, 2026",
+    readTime: "5 min read",
+    image: "assets/images/blog/blog-miter-repair.jpg",
+    excerpt: "Corner miters are the most common leak failure on residential gutters. Learn why basic hardware store silicone peels away, and how commercial tripolymer elastomeric sealants permanently cure corner drips.",
+    content: `
+      <p class="lead">If you notice water steadily dripping from a 90-degree corner seam during a rainstorm—or icicles hanging beneath corner joints in winter—your gutter miter joint sealant has failed. Corner miters are under tremendous thermal stress and require specialized restoration.</p>
+
+      <h2>Why Standard Hardware Store Silicone Always Fails</h2>
+      <p>Most DIY leak repairs fail within 6 to 12 months because homeowners apply standard 100% silicone or acrylic painters caulk. Aluminum expands and contracts dramatically with temperature swings—up to an inch across a 50-foot run between winter and summer. Silicone dries with low elongation elasticity and poor shear adhesion on oxidized aluminum. As the trough flexes, silicone delaminates, allowing water to channel underneath the bead.</p>
+
+      <h2>The Professional Miter Resealing Protocol</h2>
+      <ol>
+        <li><strong>Complete Removal of Old Brittle Caulk:</strong> Never apply new sealant over old silicone. Technicians wire-brush and scrape down to bare metal, then wipe with isopropyl alcohol to remove grease and organic films.</li>
+        <li><strong>Check Rivet Structural Integrity:</strong> Loose slip-joint miters or strip miters must be pulled tight and re-secured with stainless steel blind pop-rivets.</li>
+        <li><strong>Industrial High-Elastomeric Tripolymer Sealant:</strong> Pros apply specialized elastomeric moisture-curing sealants (such as Geocel 2320 or polyurethane Vulkem). These sealants remain permanently flexible through extreme -40°F to 200°F temperature cycles and chemically bond to aluminum even under standing water.</li>
+      </ol>
+
+      <div class="p-4 my-4 rounded-3 bg-primary-subtle border-start border-4 border-primary">
+        <h5 class="fw-bold mb-2 text-primary"><i class="bi bi-tools me-2"></i>Strip Miter vs. Box Miter Upgrades</h5>
+        <p class="mb-0">When older multi-piece corner miters develop severe corner metal fatigue, upgrading to custom factory stamped one-piece strip miters cuts the number of exposed seam points in half, virtually eliminating future corner leaks.</p>
+      </div>
+
+      <h2>Preventing Water Trenching Below Corners</h2>
+      <p>Because corner miters often sit directly above walkways, entrance steps, and foundational planting beds, a dripping corner quickly carves muddy ruts and creates winter slip hazards. Addressing corner leaks early prevents costly foundation saturation and deck timber decay.</p>
+    `
   }
 ];
 
