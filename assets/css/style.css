@@ -858,6 +858,13 @@ img {
   background: var(--sp-primary-light);
 }
 
+/* Blog Filter Buttons */
+.blog-filter-btn {
+  white-space: nowrap;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
 /* Blog Cards */
 .blog-card {
   transition: all 0.3s ease;
