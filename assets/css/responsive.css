@@ -360,20 +360,29 @@ img, svg, video, canvas, iframe {
     font-size: 1rem;
   }
 
-  /* Stack Hero Action Buttons */
+  /* Hero Action Buttons - Match Laptop Inline Flow */
   .hero-section .d-flex.flex-wrap.gap-3,
   .hero-section-2 .d-flex.flex-wrap.gap-3 {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.75rem !important;
+    width: auto;
   }
 
   .hero-section .d-flex.flex-wrap.gap-3 .btn,
   .hero-section-2 .d-flex.flex-wrap.gap-3 .btn {
-    width: 100%;
+    width: auto;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    min-height: 48px;
+  }
+
+  @media (max-width: 360px) {
+    .hero-section .d-flex.flex-wrap.gap-3 .btn,
+    .hero-section-2 .d-flex.flex-wrap.gap-3 .btn {
+      width: 100%;
+    }
   }
 
   /* Hero Badge with Soft Word Wrap */
@@ -385,21 +394,22 @@ img, svg, video, canvas, iframe {
     padding: 0.4rem 0.75rem;
   }
 
-  /* Trust Badges in Hero */
+  /* Trust Badges in Hero - Match Laptop Inline Layout */
   .hero-section .pt-3.border-top.d-flex {
-    gap: 0.75rem !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem !important;
   }
 
   .hero-section .pt-3.border-top.d-flex > div {
-    width: 100%;
+    width: auto;
   }
 
   /* Primary CTA Buttons */
   .btn-cta {
-    width: 100%;
-    justify-content: center;
-    padding: 0.8rem 1.25rem;
-    min-height: 48px;
+    width: auto;
+    min-height: 44px;
   }
 
   .hero-img {
@@ -466,48 +476,69 @@ img, svg, video, canvas, iframe {
     padding-top: 0.85rem;
   }
 
-  /* Zip Code Checker Responsive Stacking */
+  /* Zip Code Checker - Match Laptop Unified Input Group */
   .service-checker-box {
     padding: 1.25rem 1rem;
   }
 
   .service-checker-box .input-group {
-    flex-direction: column;
-    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
   }
 
   .service-checker-box .input-group .form-control {
-    border-radius: 10px !important;
-    width: 100%;
-    text-align: center;
-    font-size: 1.05rem;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    width: auto;
+    flex: 1 1 auto;
+    text-align: start;
+    font-size: 1rem;
     min-height: 46px;
   }
 
   .service-checker-box .input-group .btn {
-    border-radius: 10px !important;
-    width: 100%;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    width: auto;
+    white-space: nowrap;
     min-height: 46px;
   }
 
-  /* Newsletter Form Full-Width Pills */
+  /* Newsletter Form - Match Laptop Sleek Pill Input Bar */
   #newsletterForm .input-group {
-    flex-direction: column;
-    gap: 0.65rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
   }
 
   #newsletterForm .input-group .form-control {
-    border-radius: 50rem !important;
-    width: 100%;
-    text-align: center;
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    width: auto;
+    flex: 1 1 auto;
+    text-align: start;
     min-height: 48px;
-    padding-left: 1rem !important;
+    padding-left: 1.25rem !important;
   }
 
   #newsletterForm .input-group .btn {
-    border-radius: 50rem !important;
-    width: 100%;
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    width: auto;
+    white-space: nowrap;
     min-height: 48px;
+    padding: 0 1.25rem;
   }
 
   /* Calculator Cards & Form Grids */
@@ -529,7 +560,7 @@ img, svg, video, canvas, iframe {
     padding: 1.35rem 1rem !important;
   }
 
-  /* Modal Footer Stack */
+  /* Modal Footer Actions - Match Laptop Layout */
   .modal-dialog {
     margin: 0.5rem;
   }
@@ -539,14 +570,16 @@ img, svg, video, canvas, iframe {
   }
 
   .modal-body .d-flex.justify-content-end {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     gap: 0.6rem !important;
+    flex-wrap: wrap;
   }
 
   .modal-body .d-flex.justify-content-end .btn {
-    width: 100%;
-    min-height: 46px;
-    justify-content: center;
+    width: auto;
+    min-height: 42px;
   }
 
   /* Breadcrumb Wrapping */
