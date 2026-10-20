@@ -913,6 +913,43 @@ img {
   object-fit: cover;
 }
 
+/* Blog Details Header Navigation & Badge Alignment */
+.blog-article-meta-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.blog-back-btn,
+.blog-category-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  line-height: 1;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin: 0 !important;
+}
+
+.blog-back-btn {
+  padding: 0 1rem;
+  transition: all 0.2s ease;
+}
+
+.blog-back-btn:hover {
+  transform: translateX(-2px);
+}
+
+.blog-category-badge {
+  padding: 0 1rem;
+  letter-spacing: 0.3px;
+}
+
 /* Blog Article Typography & Layout */
 .article-content {
   font-size: 1.05rem;

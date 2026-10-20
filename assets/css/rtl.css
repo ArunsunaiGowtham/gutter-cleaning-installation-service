@@ -71,8 +71,16 @@
   content: "\f12f"; /* bi-arrow-left */
 }
 
+[dir="rtl"] .bi-arrow-left::before {
+  content: "\f138"; /* bi-arrow-right */
+}
+
 [dir="rtl"] .bi-chevron-right::before {
   content: "\f284"; /* bi-chevron-left */
+}
+
+[dir="rtl"] .blog-back-btn:hover {
+  transform: translateX(2px);
 }
 
 [dir="rtl"] .form-check {
