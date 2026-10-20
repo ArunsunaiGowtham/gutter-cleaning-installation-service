@@ -115,6 +115,23 @@ img, svg, video, canvas, iframe {
     align-items: center;
   }
 
+  .mobile-nav #mobileHomeDropdownToggle,
+  .mobile-nav .dropdown-toggle {
+    justify-content: flex-start !important;
+    gap: 0.45rem !important;
+  }
+
+  .mobile-nav #mobileHomeDropdownToggle i,
+  .mobile-nav .dropdown-toggle i {
+    font-size: 0.85rem;
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-nav #mobileHomeDropdownToggle[aria-expanded="true"] i,
+  .mobile-nav .dropdown-toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+  }
+
   .mobile-nav .dropdown-menu {
     border-radius: 12px;
   }
