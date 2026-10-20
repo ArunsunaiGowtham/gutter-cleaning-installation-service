@@ -198,6 +198,70 @@ img, svg, video, canvas, iframe {
   .modal-body {
     padding: 1.25rem 1rem !important;
   }
+
+  /* Site Footer on Tablets & Mobile (<= 767.98px) */
+  .site-footer {
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+    text-align: start;
+  }
+
+  .site-footer .footer-brand-wrap {
+    justify-content: flex-start;
+  }
+
+  .site-footer h5 {
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .site-footer .footer-links li a {
+    display: inline-block;
+    padding: 0.25rem 0;
+    min-height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .site-footer .footer-social {
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+
+  .site-footer .footer-social-link {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .site-footer .footer-contact-list li {
+    justify-content: flex-start;
+    text-align: start;
+    min-height: auto;
+  }
+
+  .site-footer .footer-status-box {
+    text-align: start;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .site-footer .footer-status-box .d-flex {
+    justify-content: flex-start;
+  }
+
+  .site-footer .footer-bottom {
+    text-align: start;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .site-footer .footer-bottom .d-flex {
+    justify-content: flex-start;
+  }
 }
 
 /* Phones (<= 575.98px) */
@@ -357,63 +421,68 @@ img, svg, video, canvas, iframe {
     min-height: 38px;
   }
 
-  /* Site Footer on Mobile */
+  /* Site Footer on Mobile - Clean Left Alignment Matching Desktop */
   .site-footer {
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
-    text-align: center;
+    text-align: start;
   }
 
   .site-footer .footer-brand-wrap {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .site-footer h5 {
-    justify-content: center;
-    margin-top: 1rem;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
   }
 
   .site-footer .footer-links li a {
     display: inline-block;
-    padding: 0.35rem 0;
-    min-height: 36px;
+    padding: 0.25rem 0;
+    min-height: 32px;
     font-size: 0.95rem;
   }
 
   .site-footer .footer-social {
-    justify-content: center;
-    gap: 0.85rem;
+    justify-content: flex-start;
+    gap: 0.75rem;
   }
 
   .site-footer .footer-social-link {
-    width: 42px;
-    height: 42px;
-    font-size: 1.1rem;
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
   }
 
   .site-footer .footer-contact-list li {
-    justify-content: center;
-    text-align: center;
-    min-height: 38px;
+    justify-content: flex-start;
+    text-align: start;
+    min-height: auto;
   }
 
   .site-footer .footer-status-box {
-    text-align: center;
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: start;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .site-footer .footer-status-box .d-flex {
+    justify-content: flex-start;
   }
 
   .site-footer .footer-bottom {
-    text-align: center;
+    text-align: start;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 2rem;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
     padding-top: 1.5rem;
   }
 
   .site-footer .footer-bottom .d-flex {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   /* Floating Back to Top Button */
