@@ -79,7 +79,12 @@
   // 2. RTL Management (Right-to-Left Layout)
   // --------------------------------------------------------------------------
   function initRtl() {
-    const savedRtl = localStorage.getItem('apexgutter_rtl') === 'true';
+    let savedRtl = false;
+    try {
+      savedRtl = localStorage.getItem('apexgutter_rtl') === 'true';
+    } catch (e) {
+      // Safe fallback if localStorage is unavailable
+    }
     applyRtl(savedRtl);
 
     const rtlToggleBtns = document.querySelectorAll('.rtl-toggle-btn');
@@ -105,12 +110,22 @@
       if (rtlLink) rtlLink.setAttribute('disabled', 'true');
     }
 
-    localStorage.setItem('apexgutter_rtl', isRtl);
+    try {
+      localStorage.setItem('apexgutter_rtl', isRtl);
+    } catch (e) {
+      // Safe fallback if localStorage is unavailable
+    }
 
-    // Update badge text if needed
+    // Update badge text and button titles
     const rtlBadges = document.querySelectorAll('.rtl-badge-text');
     rtlBadges.forEach(badge => {
       badge.textContent = isRtl ? 'LTR' : 'RTL';
+    });
+
+    const rtlToggleBtns = document.querySelectorAll('.rtl-toggle-btn');
+    rtlToggleBtns.forEach(btn => {
+      btn.setAttribute('title', isRtl ? 'Switch to LTR Layout' : 'Switch to RTL Layout');
+      btn.setAttribute('aria-label', isRtl ? 'Switch to LTR Layout' : 'Switch to RTL Layout');
     });
   }
 
