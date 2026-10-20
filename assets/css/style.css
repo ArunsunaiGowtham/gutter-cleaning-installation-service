@@ -379,6 +379,11 @@ img {
   color: var(--sp-secondary);
 }
 
+.home-item-title i,
+.home-dropdown-item i {
+  display: none !important;
+}
+
 .home-item-desc {
   display: block;
   font-size: 0.8rem;
