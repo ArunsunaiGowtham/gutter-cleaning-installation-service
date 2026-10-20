@@ -170,13 +170,13 @@
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
-                  <div class="d-flex align-items-center gap-3 mb-3 p-3 rounded-3 bg-light text-dark">
+                  <div class="d-flex align-items-center gap-3 mb-3 p-3 rounded-3 bg-body-tertiary border">
                     <div class="rounded-circle bg-success text-white p-2 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
                       <i class="bi bi-shield-check fs-4"></i>
                     </div>
                     <div>
                       <h6 class="mb-0 fw-bold" id="demoFeedbackClient">Thank you, ${name}!</h6>
-                      <small class="text-muted" id="demoFeedbackService">Service: ${service}</small>
+                      <small class="text-secondary" id="demoFeedbackService">Service: ${service}</small>
                     </div>
                   </div>
                   <div class="alert alert-info py-2 px-3 small mb-3">
@@ -187,7 +187,7 @@
                     In a production deployment, this action triggers our automated CRM workflow, dispatching an immediate quote SMS to <strong>${phone}</strong> and notifying the regional service crew.
                   </p>
                 </div>
-                <div class="modal-footer bg-light border-0 py-3">
+                <div class="modal-footer bg-body-tertiary border-top py-3">
                   <button type="button" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal">Close Window</button>
                 </div>
               </div>
