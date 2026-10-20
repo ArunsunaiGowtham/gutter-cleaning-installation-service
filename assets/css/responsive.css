@@ -11,10 +11,16 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 100%;
+  overflow-x: hidden;
   overflow-x: clip;
   -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
 }
 
 img, svg, video, canvas, iframe {
@@ -45,10 +51,28 @@ img, svg, video, canvas, iframe {
     padding: 0.55rem 0;
   }
 
+  /* Prevent header items from breaking into multi-lines */
+  .site-header .navbar > .container {
+    display: flex;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .navbar-brand {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
   .brand-logo-img {
     height: 36px;
     width: auto;
     max-width: 165px;
+  }
+
+  .site-header .d-flex.align-items-center.gap-2 {
+    flex-shrink: 0;
   }
 
   .nav-icon-btn {
@@ -68,6 +92,7 @@ img, svg, video, canvas, iframe {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
   }
 
   /* Offcanvas Mobile Navigation Menu */
@@ -85,9 +110,28 @@ img, svg, video, canvas, iframe {
   .mobile-nav .nav-link {
     font-size: 1.05rem;
     padding: 0.75rem 0.5rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-nav .dropdown-menu {
+    border-radius: 12px;
+  }
+
+  .mobile-nav .dropdown-menu .dropdown-item {
     min-height: 44px;
     display: flex;
     align-items: center;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .mobile-nav .btn-close {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    opacity: 0.8;
   }
 
   .hero-section {
@@ -107,12 +151,16 @@ img, svg, video, canvas, iframe {
     width: 100%;
   }
 
+  /* Ensure dropdown menu doesn't cause overflow inside offcanvas */
   .home-dropdown-menu {
     position: static !important;
     box-shadow: none !important;
     border: none !important;
-    padding-left: 1rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.5rem !important;
     margin-top: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
   }
 
   .calculator-card {
@@ -122,10 +170,33 @@ img, svg, video, canvas, iframe {
 
 /* Small Tablets & Large Phones (<= 767.98px) */
 @media (max-width: 767.98px) {
+  /* Prevent iOS Safari 16px input auto-zoom */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="search"],
+  input[type="password"],
+  select.form-select,
+  textarea.form-control,
+  .form-control,
+  .form-select {
+    font-size: 16px !important;
+  }
+
+  /* Touch target standards */
+  .btn:not(.btn-sm):not(.badge) {
+    min-height: 44px;
+  }
+
+  .btn-sm {
+    min-height: 36px;
+  }
+
   /* Section Spacings */
   section.py-5 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 2.75rem !important;
+    padding-bottom: 2.75rem !important;
   }
 
   .container.py-4 {
@@ -183,6 +254,17 @@ img, svg, video, canvas, iframe {
   /* Tables with Smooth Touch Momentum Scrolling */
   .table-responsive {
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+  }
+
+  /* Blog Meta Header Flex Alignment */
+  .blog-article-meta-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
   }
 
@@ -332,9 +414,9 @@ img, svg, video, canvas, iframe {
   }
 
   .slider-handle {
-    width: 42px;
-    height: 42px;
-    margin-left: -21px;
+    width: 44px;
+    height: 44px;
+    margin-left: -22px;
     font-size: 1rem;
     touch-action: none;
   }
@@ -408,10 +490,73 @@ img, svg, video, canvas, iframe {
     min-height: 46px;
   }
 
-  /* Calculator Cards */
+  /* Newsletter Form Full-Width Pills */
+  #newsletterForm .input-group {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  #newsletterForm .input-group .form-control {
+    border-radius: 50rem !important;
+    width: 100%;
+    text-align: center;
+    min-height: 48px;
+    padding-left: 1rem !important;
+  }
+
+  #newsletterForm .input-group .btn {
+    border-radius: 50rem !important;
+    width: 100%;
+    min-height: 48px;
+  }
+
+  /* Calculator Cards & Form Grids */
   .calculator-card {
     padding: 1.25rem 1rem;
     border-radius: 16px;
+  }
+
+  .calculator-card .row.g-2 > .col-6,
+  .calculator-card .row.g-3 > .col-6 {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Card padding ergonomics */
+  .card.p-4,
+  .card.p-md-5,
+  .p-5.rounded-4 {
+    padding: 1.35rem 1rem !important;
+  }
+
+  /* Modal Footer Stack */
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .modal-body {
+    padding: 1.25rem 0.95rem !important;
+  }
+
+  .modal-body .d-flex.justify-content-end {
+    flex-direction: column-reverse;
+    gap: 0.6rem !important;
+  }
+
+  .modal-body .d-flex.justify-content-end .btn {
+    width: 100%;
+    min-height: 46px;
+    justify-content: center;
+  }
+
+  /* Breadcrumb Wrapping */
+  .breadcrumb {
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+
+  .breadcrumb-item {
+    word-break: break-word;
   }
 
   /* Blog Filter Buttons */
@@ -485,10 +630,10 @@ img, svg, video, canvas, iframe {
     justify-content: flex-start;
   }
 
-  /* Floating Back to Top Button */
+  /* Floating Back to Top Button with Safe-Area Inset */
   .back-to-top-btn {
-    bottom: 20px;
-    right: 20px;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    right: 18px;
     width: 44px;
     height: 44px;
     font-size: 1.1rem;
@@ -497,28 +642,56 @@ img, svg, video, canvas, iframe {
 
 /* Ultra Small Phones (320px - 375px) */
 @media (max-width: 375px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .navbar-brand {
-    max-width: 135px;
+    max-width: 125px;
   }
 
   .brand-logo-img {
-    height: 30px;
-    max-width: 135px;
+    height: 28px;
+    max-width: 125px;
+  }
+
+  .site-header .d-flex.align-items-center.gap-2 {
+    gap: 0.25rem !important;
+    margin-right: 0.15rem !important;
   }
 
   .nav-icon-btn {
     width: 34px;
     height: 34px;
     font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  .nav-icon-btn.nav-rtl-btn {
+    min-width: 36px;
+    padding: 0 0.4rem;
   }
 
   .navbar-toggler {
     width: 36px;
     height: 36px;
+    padding: 0 !important;
   }
 
   .hero-title {
-    font-size: 1.65rem !important;
+    font-size: 1.55rem !important;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .btn {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .hero-img {
@@ -530,24 +703,28 @@ img, svg, video, canvas, iframe {
   }
 
   .service-card-body {
-    padding: 1.15rem 0.9rem;
+    padding: 1.15rem 0.85rem;
   }
 
   .pricing-card {
-    padding: 1.5rem 1rem;
-  }
-
-  .step-card {
     padding: 1.25rem 0.85rem;
   }
 
+  .pricing-price {
+    font-size: 1.95rem;
+  }
+
+  .step-card {
+    padding: 1.15rem 0.75rem;
+  }
+
   .location-map-card {
-    padding: 1.15rem 0.95rem 0.95rem 0.95rem;
+    padding: 1.15rem 0.85rem;
     border-radius: 14px;
   }
 
   .location-map-frame {
-    height: 230px;
+    height: 220px;
     margin-bottom: 0.75rem;
   }
 
@@ -555,6 +732,22 @@ img, svg, video, canvas, iframe {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .blog-article-meta-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .calculator-card {
+    padding: 1rem 0.75rem !important;
+  }
+
+  .card.p-4,
+  .card.p-md-5,
+  .p-5.rounded-4 {
+    padding: 1.15rem 0.75rem !important;
   }
 }
 

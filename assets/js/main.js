@@ -274,13 +274,20 @@
         updateSlider(e.clientX);
       });
 
-      // Touch events for mobile
+      // Touch events for mobile devices
       sliderHandle.addEventListener('touchstart', () => isDragging = true);
+      container.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        if (e.touches && e.touches[0]) {
+          updateSlider(e.touches[0].clientX);
+        }
+      }, { passive: true });
       window.addEventListener('touchend', () => isDragging = false);
+      window.addEventListener('touchcancel', () => isDragging = false);
       window.addEventListener('touchmove', (e) => {
-        if (!isDragging || !e.touches[0]) return;
+        if (!isDragging || !e.touches || !e.touches[0]) return;
         updateSlider(e.touches[0].clientX);
-      });
+      }, { passive: true });
 
       // Click anywhere to jump
       container.addEventListener('click', (e) => {

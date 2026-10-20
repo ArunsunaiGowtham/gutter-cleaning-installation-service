@@ -1503,9 +1503,30 @@ img {
   color: #6ee7b7;
   text-decoration: none;
 }
-
 .location-map-link:hover i {
   transform: translate(2px, -2px);
 }
+
+/* Fluid Layout & Container Helpers */
+.max-w-500 {
+  max-width: 500px;
+  width: 100%;
+}
+
+.max-w-600 {
+  max-width: 600px;
+  width: 100%;
+}
+
+.max-w-700 {
+  max-width: 700px;
+  width: 100%;
+}
+
+.max-w-800 {
+  max-width: 800px;
+  width: 100%;
+}
+
 
 
