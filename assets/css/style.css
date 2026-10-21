@@ -27,6 +27,10 @@
 }
 
 /* Base & Typography */
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: var(--sp-font-body);
   color: var(--sp-text-main);
@@ -35,6 +39,15 @@ body {
   overflow-x: clip;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main,
+#main,
+#mainContent {
+  flex: 1 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1120,6 +1133,16 @@ img {
   padding-top: 4.5rem;
   padding-bottom: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: auto;
+  width: 100%;
+}
+
+.site-footer .container {
+  width: 100%;
+}
+
+.site-footer .row {
+  align-items: flex-start;
 }
 
 .site-footer .footer-brand-wrap {
@@ -1138,6 +1161,7 @@ img {
 
 .site-footer .footer-brand-wrap a:hover {
   padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .site-footer .brand-logo-img,
@@ -1219,6 +1243,21 @@ img {
 .footer-contact-list a:hover {
   color: #38bdf8;
   padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.site-footer a[href^="tel:"],
+.footer-contact-list a[href^="tel:"] {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+.site-footer a[href^="mailto:"],
+.footer-contact-list a[href^="mailto:"] {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
 }
 
 /* Social Icon Links */
@@ -1251,6 +1290,7 @@ img {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
   padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* Status Badge in Footer */
@@ -1290,6 +1330,7 @@ img {
 .footer-bottom a:hover {
   color: #38bdf8;
   padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* Floating Back To Top Button */

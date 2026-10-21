@@ -103,11 +103,17 @@
     if (isRtl) {
       html.setAttribute('dir', 'rtl');
       html.setAttribute('lang', 'ar');
-      if (rtlLink) rtlLink.removeAttribute('disabled');
+      if (rtlLink) {
+        rtlLink.removeAttribute('disabled');
+        rtlLink.disabled = false;
+      }
     } else {
       html.setAttribute('dir', 'ltr');
       html.setAttribute('lang', 'en');
-      if (rtlLink) rtlLink.setAttribute('disabled', 'true');
+      if (rtlLink) {
+        rtlLink.setAttribute('disabled', 'true');
+        rtlLink.disabled = true;
+      }
     }
 
     try {

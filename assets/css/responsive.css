@@ -311,11 +311,12 @@ img, svg, video, canvas, iframe {
 
   .site-footer .footer-brand-wrap {
     justify-content: flex-start;
+    margin-top: 0;
   }
 
   .site-footer h5 {
     justify-content: flex-start;
-    margin-top: 0.5rem;
+    margin-top: 0;
   }
 
   .site-footer .footer-links li a {
@@ -356,14 +357,20 @@ img, svg, video, canvas, iframe {
   .site-footer .footer-bottom {
     text-align: start;
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: stretch !important;
     gap: 0.75rem;
     margin-top: 2.5rem;
     padding-top: 1.5rem;
   }
 
+  .site-footer .footer-bottom p {
+    text-align: start;
+    width: 100%;
+  }
+
   .site-footer .footer-bottom .d-flex {
     justify-content: flex-start;
+    width: 100%;
   }
 }
 
@@ -629,11 +636,12 @@ img, svg, video, canvas, iframe {
 
   .site-footer .footer-brand-wrap {
     justify-content: flex-start;
+    margin-top: 0;
   }
 
   .site-footer h5 {
     justify-content: flex-start;
-    margin-top: 0.5rem;
+    margin-top: 0;
   }
 
   .site-footer .footer-links li a {
@@ -674,14 +682,20 @@ img, svg, video, canvas, iframe {
   .site-footer .footer-bottom {
     text-align: start;
     flex-direction: column;
-    align-items: flex-start !important;
+    align-items: stretch !important;
     gap: 0.75rem;
     margin-top: 2.5rem;
     padding-top: 1.5rem;
   }
 
+  .site-footer .footer-bottom p {
+    text-align: start;
+    width: 100%;
+  }
+
   .site-footer .footer-bottom .d-flex {
     justify-content: flex-start;
+    width: 100%;
   }
 
   /* Floating Back to Top Button with Safe-Area Inset */
@@ -691,6 +705,11 @@ img, svg, video, canvas, iframe {
     width: 44px;
     height: 44px;
     font-size: 1.1rem;
+  }
+
+  [dir="rtl"] .back-to-top-btn {
+    right: auto !important;
+    left: 18px !important;
   }
 }
 

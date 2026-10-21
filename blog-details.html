@@ -23,9 +23,9 @@
   <!-- Custom Core & Utility CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark.css">
-  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/rtl.css" id="rtlStylesheet">
   <link rel="stylesheet" href="assets/css/responsive.css">
-<script>(function(){try{var t=localStorage.getItem('apexgutter_theme');if(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){t='dark';}if(t){document.documentElement.setAttribute('data-bs-theme',t);}}catch(e){}})();</script>
+<script>(function(){try{var t=localStorage.getItem('apexgutter_theme');if(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){t='dark';}if(t){document.documentElement.setAttribute('data-bs-theme',t);}var r=localStorage.getItem('apexgutter_rtl')==='true';if(r){document.documentElement.setAttribute('dir','rtl');document.documentElement.setAttribute('lang','ar');}else{document.documentElement.setAttribute('dir','ltr');document.documentElement.setAttribute('lang','en');}}catch(e){}})();</script>
 </head>
 <body>
 
@@ -306,16 +306,16 @@
             <li><a href="service-details.html?service=gutter-guards">Micro-Mesh Guards</a></li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
           <h5>Contact Us</h5>
           <ul class="footer-links footer-contact-list">
             <li>
               <i class="bi bi-telephone-fill footer-contact-icon"></i>
-              <a href="tel:+18005554887">+1 (800) 555-4887</a>
+              <a href="tel:+18005554887"><bdi>+1 (800) 555-4887</bdi></a>
             </li>
             <li>
               <i class="bi bi-envelope-fill footer-contact-icon"></i>
-              <a href="mailto:service@apexgutter.com">service@apexgutter.com</a>
+              <a href="mailto:service@apexgutter.com"><bdi>service@apexgutter.com</bdi></a>
             </li>
             <li>
               <i class="bi bi-geo-alt-fill footer-contact-icon"></i>
@@ -331,7 +331,7 @@
         </div>
       </div>
       <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
-        <p class="mb-0 text-secondary">&copy; 2026 ApexGutter Co. All rights reserved.</p>
+        <p class="mb-0 text-secondary" dir="auto">&copy; 2026 ApexGutter Co. All rights reserved.</p>
         <div class="d-flex align-items-center gap-3 text-secondary small">
           <a href="privacy-policy.html">Privacy Policy</a>
           <span class="text-secondary opacity-50">•</span>
