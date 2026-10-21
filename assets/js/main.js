@@ -49,12 +49,18 @@
     const themeIcons = document.querySelectorAll('.theme-icon');
     themeIcons.forEach(icon => {
       if (theme === 'dark') {
-        icon.classList.remove('bi-moon-stars-fill');
+        icon.classList.remove('bi-moon-fill', 'bi-moon-stars-fill', 'bi-moon');
         icon.classList.add('bi-sun-fill');
       } else {
-        icon.classList.remove('bi-sun-fill');
-        icon.classList.add('bi-moon-stars-fill');
+        icon.classList.remove('bi-sun-fill', 'bi-sun');
+        icon.classList.add('bi-moon-fill');
       }
+    });
+
+    const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
+    themeToggleBtns.forEach(btn => {
+      btn.setAttribute('title', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode');
     });
 
     // Update Header / Navigation Brand Logos to match theme
