@@ -1321,16 +1321,24 @@ img {
   font-size: 0.875rem;
 }
 
-.footer-bottom a {
+.footer-bottom a,
+.footer-bottom-link {
   color: #94a3b8;
   text-decoration: none;
   transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
-.footer-bottom a:hover {
+.footer-bottom a:hover,
+.footer-bottom-link:hover {
   color: #38bdf8;
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.footer-bottom-link i {
+  font-size: 0.95rem;
 }
 
 /* Floating Back To Top Button */
