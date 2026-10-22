@@ -13,6 +13,9 @@
   --sp-border-color: rgba(255, 255, 255, 0.12);
   --sp-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
   --sp-box-shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+  --sp-primary-light: rgba(56, 189, 248, 0.16);
+  --sp-dark-surface: #0b1320;
+  --sp-bg-subtle: #0f1e33;
 
   /* Bootstrap Variable Overrides */
   --bs-body-bg: #0b1320;
@@ -596,3 +599,43 @@
   width: auto;
   opacity: 1;
 }
+
+/* 20. Component Harmonization in Dark Mode */
+[data-bs-theme="dark"] .damage-icon-wrap {
+  background: rgba(239, 68, 68, 0.18) !important;
+  color: #f87171 !important;
+  border: 1px solid rgba(239, 68, 68, 0.3) !important;
+}
+
+[data-bs-theme="dark"] .service-card-icon {
+  background: rgba(56, 189, 248, 0.16) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+}
+
+[data-bs-theme="dark"] .hero-badge {
+  background: rgba(56, 189, 248, 0.14) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+}
+
+[data-bs-theme="dark"] .location-map-frame {
+  background-color: #0b1524 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-bs-theme="dark"] .client-avatar {
+  background: rgba(56, 189, 248, 0.18) !important;
+  border: 2px solid rgba(56, 189, 248, 0.3);
+}
+
+[data-bs-theme="dark"] .step-num {
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4) !important;
+}
+
+[data-bs-theme="dark"] .damage-feature-box,
+[data-bs-theme="dark"] .service-checker-box {
+  background-color: #132238 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
