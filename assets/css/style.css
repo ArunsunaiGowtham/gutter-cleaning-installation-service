@@ -1566,21 +1566,21 @@ img {
 }
 
 /* ==========================================================================
-   Location Map Card (Matching reference design in Image 2)
+   Location Map Card (ApexGutter Brand Theme)
    ========================================================================== */
 .location-map-card {
-  background: #091a13;
-  border: 1px solid rgba(52, 211, 153, 0.22);
+  background: linear-gradient(145deg, #0f2942 0%, #0a192f 100%);
+  border: 1px solid rgba(2, 132, 199, 0.28);
   border-radius: 18px;
   padding: 1.35rem 1.35rem 1.15rem 1.35rem;
-  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 32px -8px rgba(15, 41, 66, 0.45), 0 4px 12px rgba(2, 132, 199, 0.1);
   color: #f8fafc;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .location-map-card:hover {
-  border-color: rgba(52, 211, 153, 0.4);
-  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.45);
+  border-color: rgba(6, 182, 212, 0.55);
+  box-shadow: 0 16px 36px -8px rgba(2, 132, 199, 0.35), 0 0 20px -4px rgba(6, 182, 212, 0.2);
 }
 
 .location-map-header {
@@ -1595,13 +1595,14 @@ img {
 }
 
 .location-map-icon {
-  color: #34d399;
+  color: #38bdf8;
   font-size: 1.35rem;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(2, 132, 199, 0.3));
 }
 
 .location-map-title {
@@ -1616,7 +1617,7 @@ img {
 
 .location-map-address {
   font-family: var(--sp-font-body);
-  color: #9db8a8;
+  color: #cbd5e1;
   font-size: 0.92rem;
   line-height: 1.45;
 }
@@ -1627,9 +1628,10 @@ img {
   height: 275px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background-color: #e5e3df;
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  background-color: #0c1a2d;
   margin-bottom: 0.95rem;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .location-map-frame iframe {
@@ -1637,6 +1639,8 @@ img {
   height: 100% !important;
   border: 0 !important;
   display: block;
+  filter: contrast(1.02) saturate(0.95);
+  transition: filter 0.3s ease;
 }
 
 .location-map-footer {
@@ -1649,14 +1653,14 @@ img {
 }
 
 .location-map-amenity {
-  color: #9db8a8;
+  color: #94a3b8;
   font-size: 0.88rem;
   line-height: 1.4;
   margin: 0;
 }
 
 .location-map-link {
-  color: #34d399;
+  color: #38bdf8;
   font-weight: 600;
   font-size: 0.92rem;
   display: inline-flex;
@@ -1673,7 +1677,7 @@ img {
 }
 
 .location-map-link:hover {
-  color: #6ee7b7;
+  color: #bae6fd;
   text-decoration: none;
 }
 .location-map-link:hover i {
