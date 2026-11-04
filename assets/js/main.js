@@ -73,11 +73,11 @@
       }
     });
 
-    // The footer brand logo sits on its crisp white badge, ensuring
-    // 100% brand consistency between header and footer across all themes
+    // The footer has a dark background (#091a2b) across all themes,
+    // so the footer brand logo uses high-contrast logo-dark.svg
     const footerBrandLogos = document.querySelectorAll('.site-footer .brand-logo-img, .footer-brand-wrap img');
     footerBrandLogos.forEach(logo => {
-      logo.src = 'assets/images/logo/logo.svg';
+      logo.src = 'assets/images/logo/logo-dark.svg';
     });
   }
 

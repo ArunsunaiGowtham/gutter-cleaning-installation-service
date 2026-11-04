@@ -604,11 +604,6 @@
   opacity: 1;
 }
 
-[data-bs-theme="dark"] .site-footer .footer-brand-wrap .footer-brand-link,
-[data-bs-theme="dark"] .site-footer .footer-brand-wrap a {
-  background-color: #ffffff !important;
-}
-
 /* 20. Component Harmonization in Dark Mode */
 [data-bs-theme="dark"] .damage-icon-wrap {
   background: rgba(239, 68, 68, 0.18) !important;
