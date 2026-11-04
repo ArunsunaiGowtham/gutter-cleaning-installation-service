@@ -275,21 +275,25 @@ img {
 }
 
 .nav-icon-btn.nav-rtl-btn {
-  width: auto !important;
-  min-width: auto;
-  height: 38px;
-  padding: 0 0.85rem !important;
-  border-radius: 999px !important;
-  font-size: 0.825rem;
-  font-weight: 700;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  font-size: 0.72rem;
+  font-weight: 800;
   letter-spacing: 0.3px;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
 }
 
-.nav-icon-btn.nav-rtl-btn i {
-  font-size: 0.95rem;
+.nav-icon-btn.nav-rtl-btn .rtl-badge-text {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
 }
 
 .site-header .btn-cta {
@@ -308,6 +312,8 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 
   .site-header #desktopNav {
@@ -585,13 +591,18 @@ img {
 }
 
 /* Buttons */
+.btn {
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
 .btn-primary {
   background: var(--sp-primary);
   border-color: var(--sp-primary);
   color: #ffffff;
   font-weight: 700;
   padding: 0.65rem 1.5rem;
-  border-radius: 10px;
+  border-radius: 999px !important;
   transition: all 0.2s ease;
 }
 
@@ -608,7 +619,7 @@ img {
   border-width: 2px;
   font-weight: 700;
   padding: 0.6rem 1.45rem;
-  border-radius: 10px;
+  border-radius: 999px !important;
 }
 
 .btn-outline-primary:hover {
@@ -634,6 +645,15 @@ img {
 .btn-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(2, 132, 199, 0.45);
+}
+
+.btn-secondary,
+.btn-outline-secondary,
+.btn-light,
+.btn-outline-light,
+.btn-info,
+.btn-outline-info {
+  border-radius: 999px !important;
 }
 
 /* Section Headings */
@@ -1707,3 +1727,22 @@ img {
 
 
 
+
+
+/* Safety Protocol & Feature Circle Icons Perfect Centering */
+.rounded-circle[style*="60px"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+
+.rounded-circle[style*="60px"] i {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle;
+}
